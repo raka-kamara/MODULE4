@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="styles/nav.css">
     <style>
         label{
             display: block;
@@ -13,27 +14,48 @@
 </head>
 <body>
     <header>
-        <h1>Form Example</h1>
+         <nav>
+            <ul>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="Advanced.html">Advanced</a></li>
+                <li><a href="Another.html">Another</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+       
+        <h1>Form Example</h1>
         <form action="">
-            <label for="Name">Your Name
-                <input type="Name" placeholder="Name">
+            <label for="Name">Your Name:
+                <input type="text" placeholder="Name">
             </label>
-            <label for="Age">Your Age
-                <input type="Age" placeholder="Age">
+            <label for="Age">Your Age:
+                <input type="number" placeholder="Age">
             </label>
-            <label for="Email">Your Email
+            <label for="Email">Your Email: 
                 <input type="Email" placeholder="Email">
             </label>
             <fieldset>
                 <legend>Select Your Gender</legend>
-            </fieldset>
-            <label for="Name">
-                <input type="Name" placeholder="Name">
+                <label for="Name">
+                <input type="radio" name="gender" id="">Male
             </label>
+            <label for="Name">
+                <input type="radio" name="gender" id="">Female
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>Write Your Queries Here</legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
         </form>
     </main>
+    <footer>
+        
+    </footer>
     
 </body>
 </html>
